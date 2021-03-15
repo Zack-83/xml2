@@ -14,8 +14,9 @@
 #' after which to add, use `0` for the first child. For
 #' `xml_add_sibling` either \sQuote{"before"} or \sQuote{"after"}
 #' indicating if the new node should be before or after `.x`.
-#' @param ... If named attributes or namespaces to set on the node, if unnamed
-#' text to assign to the node.
+#' @param ... If named, attributes or namespaces to set on the node; if unnamed,
+#' text to assign to the node. In order to be recognised as such,
+#' a namespace prefix should be prefixed with \sQuote{xmlns:}. 
 #' @param .value node to insert.
 #' @param free When removing the node also free the memory used for that node.
 #' Note if you use this option you cannot use any existing objects pointing to
